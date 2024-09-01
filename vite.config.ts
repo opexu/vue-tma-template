@@ -28,6 +28,7 @@ export default defineConfig( ( { command, mode, isSsrBuild, isPreview } ) => {
         build: {
             outDir: '../dist',
             emptyOutDir: true,
-        }
+        },
+        base: 'vue-tma-template'
     } satisfies UserConfig;
 } );
