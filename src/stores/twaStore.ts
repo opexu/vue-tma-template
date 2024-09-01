@@ -3,9 +3,8 @@ import { defineStore } from 'pinia'
 import WebApp from '@twa-dev/sdk'
 
 export const useTWAStore = defineStore( 'twa', () => {
-    
-    WebApp.ready();
-    
+
+    console.log('twa ready');
     const webApp = WebApp;
 
     return { webApp }
