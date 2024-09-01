@@ -26,8 +26,7 @@ export default defineConfig( ( { command, mode, isSsrBuild, isPreview } ) => {
             }
         },
         build: {
-            outDir: '../dist',
-            emptyOutDir: true,
+            outDir: './dist',
         }
     } satisfies UserConfig;
 } );
